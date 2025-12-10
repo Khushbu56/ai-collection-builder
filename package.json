@@ -1,0 +1,52 @@
+{
+  "name": "ai-collection-builder",
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "test": "vitest",
+    "test:ui": "vitest --ui",
+    "test:coverage": "vitest --coverage",
+    "e2e": "playwright test",
+    "e2e:ui": "playwright test --ui",
+    "e2e:debug": "playwright test --debug",
+    "type-check": "tsc --noEmit",
+    "analyze": "vite-bundle-visualizer"
+  },
+  "dependencies": {
+    "react": "^19.0.0-rc-66c6971-20240905",
+    "react-dom": "^19.0.0-rc-66c6971-20240905",
+    "react-router-dom": "^7.0.0",
+    "@tanstack/react-query": "^5.28.0",
+    "msw": "^2.0.11",
+    "react-hook-form": "^7.48.1",
+    "framer-motion": "^10.16.4",
+    "lucide-react": "^0.363.0"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.1.4",
+    "@testing-library/react": "^14.1.0",
+    "@testing-library/user-event": "^14.5.1",
+    "@types/node": "^20.10.5",
+    "@types/react": "^18.2.37",
+    "@types/react-dom": "^18.2.15",
+    "@vitejs/plugin-react": "^4.2.1",
+    "@vitest/ui": "^1.0.4",
+    "autoprefixer": "^10.4.16",
+    "jsdom": "^23.0.1",
+    "postcss": "^8.4.32",
+    "prettier": "^3.1.0",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5.3.3",
+    "vite": "^5.0.8",
+    "vitest": "^1.0.4",
+    "@playwright/test": "^1.40.1"
+  },
+  "msw": {
+    "workerDirectory": [
+      "public"
+    ]
+  }
+}
